@@ -1,0 +1,5 @@
+Zero-noise instrumentation versus unmodified original: PASS (rtol=atol=1e-8)
+Frozen manifest and original simulator hashes unchanged: PASS
+Integer-valued delay equivalence, legacy versus fractional: PASS
+Seeded measurement-noise reproducibility: PASS
+Exact interval propagation versus tight RK45, 15 states/flows: PASS (max state error 6.07e-18)

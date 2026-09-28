@@ -1,0 +1,95 @@
+                       comparison  max_IAE_difference_percent  median_IAE_difference_percent  above_one_percent  n
+        legacy_RK45 to tight_RK45                    0.054628                   1.283418e-11                  0 45
+       tight_RK45 to exact_legacy                    0.095582                   2.797762e-11                  0 45
+    exact_legacy to stable_legacy                    0.088135                   5.759837e-11                  0 45
+       sample_20.0 to sample_10.0                   48.753525                   1.731228e+00                 26 45
+        sample_10.0 to sample_5.0                   82.748558                   4.644199e-01                 14 45
+         sample_5.0 to sample_2.5                   36.896099                   1.696637e-01                  8 45
+        sample_2.5 to sample_1.25                   20.524692                   1.318930e-01                  7 45
+      sample_1.25 to sample_0.625                   51.707935                   7.469770e-02                  4 45
+       sample_5.0 to fractional_5                   14.124264                   8.098468e-01                 22 45
+   fractional_5 to fractional_2.5                   35.477040                   4.573850e-01                 18 45
+fractional_2.5 to fractional_1.25                   49.910073                   1.753268e-01                  6 45
+
+NOMINAL 5s
+                           design              scenario           IAE  unsettled_segments  IAE_ratio_to_C1
+        reference_PI/A_original3    reverse_off_anchor  60945.490269                   2         2.102892
+        reference_PI/A_original3     cross_equivalence  66145.050213                   4         1.270412
+        reference_PI/A_original3 regulatory_off_anchor 102686.707611                   3         1.371130
+        reference_PI/B_analytic3    reverse_off_anchor   4616.058029                   0         0.159275
+        reference_PI/B_analytic3     cross_equivalence  40439.887430                   0         0.776707
+        reference_PI/B_analytic3 regulatory_off_anchor  53447.455632                   0         0.713660
+reference_PI/E_original5_retuned    reverse_off_anchor  63518.656923                   2         2.191678
+reference_PI/E_original5_retuned     cross_equivalence  80201.055925                   4         1.540378
+reference_PI/E_original5_retuned regulatory_off_anchor 119688.821648                   3         1.598152
+             IMC_PID/A_original3    reverse_off_anchor   4666.198283                   0         0.161005
+             IMC_PID/A_original3     cross_equivalence  68623.756251                   4         1.318019
+             IMC_PID/A_original3 regulatory_off_anchor 108259.788689                   2         1.445545
+     IMC_PID/E_original5_retuned    reverse_off_anchor   6921.333255                   0         0.238817
+     IMC_PID/E_original5_retuned     cross_equivalence 118584.965591                   3         2.277597
+     IMC_PID/E_original5_retuned regulatory_off_anchor 110155.405772                   2         1.470857
+                        fixed/C1    reverse_off_anchor  28981.750752                   2         1.000000
+                        fixed/C1     cross_equivalence  52065.833503                   4         1.000000
+                        fixed/C1 regulatory_off_anchor  74892.006351                   3         1.000000
+
+NOMINAL SAMPLING
+                           design              scenario      IAE_2p5s  IAE_absolute_change_percent  unsettled_segments_2p5s
+        reference_PI/A_original3    reverse_off_anchor  60615.858789                     0.543804                        2
+        reference_PI/A_original3     cross_equivalence  66471.036197                     0.490418                        4
+        reference_PI/A_original3 regulatory_off_anchor 102072.721034                     0.601519                        3
+        reference_PI/B_analytic3    reverse_off_anchor   4655.501978                     0.847254                        0
+        reference_PI/B_analytic3     cross_equivalence  40151.290820                     0.718773                        0
+        reference_PI/B_analytic3 regulatory_off_anchor  53142.036939                     0.574721                        0
+reference_PI/E_original5_retuned    reverse_off_anchor  69232.535202                     8.253169                        2
+reference_PI/E_original5_retuned     cross_equivalence  97115.067071                    17.416464                        5
+reference_PI/E_original5_retuned regulatory_off_anchor 124619.707154                     3.956746                        3
+             IMC_PID/A_original3    reverse_off_anchor   4442.303848                     5.040052                        0
+             IMC_PID/A_original3     cross_equivalence  68916.038529                     0.424114                        3
+             IMC_PID/A_original3 regulatory_off_anchor 108449.648728                     0.175067                        0
+     IMC_PID/E_original5_retuned    reverse_off_anchor   7559.068229                     8.436688                        0
+     IMC_PID/E_original5_retuned     cross_equivalence 118525.773332                     0.049940                        3
+     IMC_PID/E_original5_retuned regulatory_off_anchor 172846.650173                    36.269864                        3
+                        fixed/C1    reverse_off_anchor  28789.602526                     0.667422                        2
+                        fixed/C1     cross_equivalence  52419.817680                     0.675287                        4
+                        fixed/C1 regulatory_off_anchor  75286.996067                     0.524645                        3
+
+OVERALL
+                                   runs       mean_IAE      worst_IAE  unsettled_segments  total_segments  maximum_IAE_increase_percent  max_actuator_TV
+design                                                                                                                                                 
+fixed/C1                            78   64855.590172  119629.125295                 271             390                    147.257451        12.662781
+reference_PI/A_original3            78   92567.856517  153189.803755                 291             390                    100.569070        44.493557
+reference_PI/B_analytic3            78   48074.918902  113981.627246                  53             390                   1179.508661        15.428947
+reference_PI/E_original5_retuned    78   80719.415652  146812.577966                 222             390                     56.643829        79.526778
+IMC_PID/A_original3                 78  100330.775478  228259.995967                 215             390                   4256.776845       280.062601
+IMC_PID/E_original5_retuned         78   79512.712921  207529.823218                 144             390                    854.178439      2399.856612
+
+TRAJECTORY
+                           design     scenario       comparison  max_pH_difference
+        reference_PI/A_original3 standardised default_to_tight       2.731857e+00
+        reference_PI/A_original3 standardised   exact_to_tight       3.075552e+00
+        reference_PI/A_original3         wide default_to_tight       1.710692e-08
+        reference_PI/A_original3         wide   exact_to_tight       1.578001e-08
+        reference_PI/A_original3   regulatory default_to_tight       7.024289e-04
+        reference_PI/A_original3   regulatory   exact_to_tight       1.674512e-03
+reference_PI/E_original5_retuned standardised default_to_tight       3.007237e-08
+reference_PI/E_original5_retuned standardised   exact_to_tight       1.788494e-08
+reference_PI/E_original5_retuned         wide default_to_tight       3.382006e-11
+reference_PI/E_original5_retuned         wide   exact_to_tight       3.387157e-11
+reference_PI/E_original5_retuned   regulatory default_to_tight       1.602299e-09
+reference_PI/E_original5_retuned   regulatory   exact_to_tight       2.809365e-09
+     IMC_PID/E_original5_retuned standardised default_to_tight       4.253120e-09
+     IMC_PID/E_original5_retuned standardised   exact_to_tight       7.413443e-09
+     IMC_PID/E_original5_retuned         wide default_to_tight       2.943068e-11
+     IMC_PID/E_original5_retuned         wide   exact_to_tight       2.943068e-11
+     IMC_PID/E_original5_retuned   regulatory default_to_tight       4.183320e-12
+     IMC_PID/E_original5_retuned   regulatory   exact_to_tight       6.497913e-12
+
+SAMPLING NOISELESS
+ count    495.000000
+mean       2.561202
+std        7.132480
+min        0.000090
+25%        0.104148
+50%        0.366902
+75%        1.060085
+max       63.711615
