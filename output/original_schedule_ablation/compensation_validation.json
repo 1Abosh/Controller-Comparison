@@ -1,0 +1,14 @@
+{
+  "input_sha256": {
+    "output/original_schedule_ablation/design_manifest.csv": "c252521fa1fff6a429c498edf99a0790c1764e875bc418d61bea86b90802a354",
+    "output/original_schedule_ablation/scenario_results.csv": "0602b3e2a888ad1f83aa6ea775ee605d90b3731cc033d5b39719e16f833be1aa",
+    "output/original_schedule_ablation/paired_contrasts.csv": "00f852bb8ee176524a891055b8c1db711a6a91e8dd01b83c779d8d204b324ef2"
+  },
+  "primary_grid": {
+    "min_pH": 5,
+    "max_pH": 9,
+    "n": 200
+  },
+  "dense_grid_n": 20001,
+  "checks": "Complete coverage, unchanged inputs, scalar invariance, retained Kc anchors, fixed free parameters and Ti/Td curves, resampling invariance, grid-direction agreement: PASS"
+}
