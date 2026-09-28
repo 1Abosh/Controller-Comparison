@@ -1,0 +1,73 @@
+change,task,IAE_change_percent
+add pH 7,acidic_step_-1,0.0
+add pH 7,acidic_step_+1,0.0
+add pH 7,acidic_disturbance,0.0
+add pH 7,neutral_step_-1,226.32901499990567
+add pH 7,neutral_step_+1,229.63455931228785
+add pH 7,neutral_disturbance,20.258793065118862
+add pH 7,alkaline_step_-1,8.178768581374808
+add pH 7,alkaline_step_+1,18.05347647539599
+add pH 7,alkaline_disturbance,5.79129926328712
+add pH 8,acidic_step_-1,0.0
+add pH 8,acidic_step_+1,0.0
+add pH 8,acidic_disturbance,0.0
+add pH 8,neutral_step_-1,-15.858906655869752
+add pH 8,neutral_step_+1,2.6908412658169123
+add pH 8,neutral_disturbance,18.77740389075111
+add pH 8,alkaline_step_-1,24.16012292045222
+add pH 8,alkaline_step_+1,52.264604608097784
+add pH 8,alkaline_disturbance,4.05059004053181
+uniform policy 3 to 4 (locations also move),acidic_step_-1,18.579066913551777
+uniform policy 3 to 4 (locations also move),acidic_step_+1,8.644964706836511
+uniform policy 3 to 4 (locations also move),acidic_disturbance,1.2617181836402258
+uniform policy 3 to 4 (locations also move),neutral_step_-1,5.289070103969595
+uniform policy 3 to 4 (locations also move),neutral_step_+1,44.89600302409358
+uniform policy 3 to 4 (locations also move),neutral_disturbance,91.72559996080638
+uniform policy 3 to 4 (locations also move),alkaline_step_-1,9.156548279262733
+uniform policy 3 to 4 (locations also move),alkaline_step_+1,19.643099203662718
+uniform policy 3 to 4 (locations also move),alkaline_disturbance,39.2817061538367
+uniform policy 4 to 5 (locations also move),acidic_step_-1,18.176025514498374
+uniform policy 4 to 5 (locations also move),acidic_step_+1,8.832243864792687
+uniform policy 4 to 5 (locations also move),acidic_disturbance,1.1237495291322341
+uniform policy 4 to 5 (locations also move),neutral_step_-1,-16.564355388814466
+uniform policy 4 to 5 (locations also move),neutral_step_+1,44.049428160558726
+uniform policy 4 to 5 (locations also move),neutral_disturbance,17.716667720158053
+uniform policy 4 to 5 (locations also move),alkaline_step_-1,9.03826161326231
+uniform policy 4 to 5 (locations also move),alkaline_step_+1,18.432025022252162
+uniform policy 4 to 5 (locations also move),alkaline_disturbance,7.833693424583554
+placement at N=3,acidic_step_-1,-8.180267834332334
+placement at N=3,acidic_step_+1,-4.015482312725027
+placement at N=3,acidic_disturbance,-0.6392467570106364
+placement at N=3,neutral_step_-1,128.6743199408665
+placement at N=3,neutral_step_+1,43.57412621220096
+placement at N=3,neutral_disturbance,-22.596675588955517
+placement at N=3,alkaline_step_-1,3.4892565207140347
+placement at N=3,alkaline_step_+1,7.67221565822942
+placement at N=3,alkaline_disturbance,-16.237398317338368
+placement at N=4,acidic_step_-1,8.878981644571082
+placement at N=4,acidic_step_+1,4.282345365367135
+placement at N=4,acidic_disturbance,0.6144059340580599
+placement at N=4,neutral_step_-1,-26.218922018814585
+placement at N=4,neutral_step_+1,-36.88975734453831
+placement at N=4,neutral_disturbance,23.402193165472916
+placement at N=4,alkaline_step_-1,4.424649808162573
+placement at N=4,alkaline_step_+1,9.122051836910927
+placement at N=4,alkaline_disturbance,10.279372268698639
+placement at N=5,acidic_step_-1,28.668853128214344
+placement at N=5,acidic_step_+1,13.492816415961695
+placement at N=5,acidic_disturbance,1.7450598469812117
+placement at N=5,neutral_step_-1,-26.837511175533134
+placement at N=5,neutral_step_+1,-11.472198946533407
+placement at N=5,neutral_disturbance,22.30015552587672
+placement at N=5,alkaline_step_-1,-8.293564658028107
+placement at N=5,alkaline_step_+1,-15.124426934996105
+placement at N=5,alkaline_disturbance,14.288943634495777
+gain estimate at same five anchors,acidic_step_-1,2.276667257847742
+gain estimate at same five anchors,acidic_step_+1,2.250379728341745
+gain estimate at same five anchors,acidic_disturbance,2.5096061155804428
+gain estimate at same five anchors,neutral_step_-1,-63.9482741518525
+gain estimate at same five anchors,neutral_step_+1,-64.29457378567211
+gain estimate at same five anchors,neutral_disturbance,-20.031066152649736
+gain estimate at same five anchors,alkaline_step_-1,-19.041880561880152
+gain estimate at same five anchors,alkaline_step_+1,-26.687598917989952
+gain estimate at same five anchors,alkaline_disturbance,-13.163984058617373
