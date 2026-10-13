@@ -2,6 +2,18 @@
 
 Compare controller compensation of the nonlinear local process gain in a lab-scale strong-acid/strong-base CSTR.
 
+## See the loop-gain flatness versus operating pH graph
+
+**[Open the loop-gain-versus-operating-pH graph](output/compensation_vs_tracking/loop_gain_vs_pH.png)** — view the saved figure directly on GitHub; no notebook execution is required.
+
+![Proportional loop gain versus operating pH, with flatness F for each schedule](output/compensation_vs_tracking/loop_gain_vs_pH.png)
+
+The horizontal axis is operating pH; the curves show local proportional loop gain, `L_P(pH) = Kc(pH) Kp,local(pH)`. Each legend reports the flatness ratio `F = max(L_P)/min(L_P)` over pH 5–9. A flatter curve indicates more complete compensation of process-gain variation; ideal compensation has `F = 1`. A curve normalized to its reference value is unity everywhere under ideal compensation. The absolute loop gain need not equal one.
+
+In the **[main notebook](Lab_Scale_CSTR_Simulation_2_corrected.ipynb)**, look for **Section 6: Central result: loop-gain flatness and nonlinear gain compensation** for the executable analysis. The **Packaged results and figure gallery** near the end displays the saved graph under **Loop-gain flatness versus operating pH — saved graph**. The [Section 6 summary figure](output/loop_gain_flatness/loop_gain_flatness.png) also shows process gain, controller gain and proportional loop gain.
+
+These saved figures quantify static compensation. The notebook's **Nonlinear compensation versus setpoint tracking** analysis relates it to tracking error under the declared model and tuning conditions.
+
 ## Open the notebook
 
 [Main notebook](Lab_Scale_CSTR_Simulation_2_corrected.ipynb) · [Independent schedule experiment](CSTR_Schedule_Cause_Separation.ipynb)
