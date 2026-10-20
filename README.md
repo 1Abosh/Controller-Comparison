@@ -2,6 +2,27 @@
 
 This repository contains the notebooks and simulation results from my CSC421 research project on pH control in a lab-scale CSTR. The main question is how well different controllers compensate for changes in process gain, and how that compensation relates to setpoint tracking.
 
+## Closed-loop responses for all six controllers
+
+The figure below compares all six controllers on the same standardised setpoint-tracking and disturbance-rejection test. Each panel shows reactor pH against the setpoint, using common time and pH scales.
+
+| Controller | Design |
+|---|---|
+| C1 | Conventional PI, fixed reference tuning |
+| C2 | Gain-scheduled PI, 3 references |
+| C2b | Gain-scheduled PI, 5 references with analytic local gains |
+| C3 | IMC PI, fixed tuning on the averaged model |
+| C4 | Gain-scheduled IMC, 3 references |
+| C4b | Gain-scheduled IMC, 5 references with analytic local gains |
+
+![Closed-loop pH responses for C1, C2, C2b, C3, C4 and C4b](controller_responses.png)
+
+[Open the full-size response figure](controller_responses.png).
+
+The setpoint follows **7 → 8 → 7 → 6**, changing at 60, 80 and 100 ks. Acid-feed concentration factors change to **1.05, 0.95 and 1.05** at 20, 65 and 120 ks; the dotted vertical lines mark these disturbances. One kilosecond (ks) is 1,000 seconds.
+
+These responses use the selected controller settings and the original simulator's sampling and delay conventions from the [main notebook](Lab_Scale_CSTR_Simulation_2_corrected.ipynb), without retuning. To regenerate the figure after installing the requirements, run `python controller_responses.py` from the repository root. Section 5 of the notebook also reports wide-range tracking and regulatory results. The figure illustrates this particular benchmark scenario; the numerical and robustness limits in Section 11 still apply.
+
 ## See the loop-gain flatness versus operating pH graph
 
 [Open the graph](output/compensation_vs_tracking/loop_gain_vs_pH.png), or view it below. You can see the saved results without running the notebook.
